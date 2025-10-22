@@ -1,0 +1,57 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitense Truker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Fitense Truker</h1>
+
+        <form id="entryForm" class="form">
+            <div class="row">
+                <label>Activity
+                    <select id="activity">
+                        <option>Running</option>
+                        <option>Walking</option>
+                        <option>Cycling</option>
+                        <option>Strength</option>
+                        <option>Yoga</option>
+                    </select>
+                </label>
+
+                <label>Minutes
+                    <input id="minutes" type="number" min="1" value="30" required>
+                </label>
+
+                <label>Intensity
+                    <select id="intensity">
+                        <option value="low">Low</option>
+                        <option value="moderate" selected>Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </label>
+
+                <label>Date
+                    <input id="date" type="date">
+                </label>
+
+                <button type="submit" class="btn">Add</button>
+            </div>
+        </form>
+
+        <section class="summary">
+            <div>Total minutes: <span id="totalMinutes">0</span></div>
+            <div>Total calories: <span id="totalCalories">0</span></div>
+        </section>
+
+        <ul id="entries" class="entries"></ul>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+<!-- ...existing code... -->
